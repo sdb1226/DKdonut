@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- https://markjerminmanagement.co.uk/ -->
+
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <i onclick="menuopen()" id="fabars" class="fas fa-bars"></i>
+        <div id="menux" class="menu_x menu_display">
+            <i onclick="menuclose()" id="fatimes" class="fas fa-times"></i>
+            <ul class="menux_menu_container">
+                <li>소개</li>
+                <li>정보</li>
+                <li>개요</li>
+                <li>이미지</li>
+                <li>SNS</li>
+            </ul>
+        </div>
+        <script>
+            function menuopen() {
+                menux.style.display = "block";
+                fabars.style.display = "none";
+            }
+
+            function menuclose() {
+                menux.style.display = "none";
+                fabars.style.display = "block";
+            }
+        </script>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide_img1">
+                    <div class="slide_1">
+                        <img src="https://markjerminmanagement.co.uk/app/themes/mark-jermin-management/dist/images/logo.svg"
+                            width="500vw" alt="">
+                        <div class="button_container">
+                            <input type="button" class="slide_1_button" value="아역 배우" name="" id="">
+                            <input type="button" class="slide_1_button" value="성인 배우" name="" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide_img2">
+                    <div class="slide_1">
+                        <img src="https://markjerminmanagement.co.uk/app/themes/mark-jermin-management/dist/images/voices.png"
+                            width="500vw" alt="">
+                        <div class="button_container">
+                            <input type="button" class="slide_1_button" value="아역 배우" name="" id="">
+                            <input type="button" class="slide_1_button" value="성인 배우" name="" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">3</div>
+                <div class="swiper-slide">4</div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+
+
+        </div>
+        <style>
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+                text-align: center;
+                font-size: 12px;
+                color: #000;
+                opacity: 1;
+                border: 2px solid #ffffff;
+                background-color: #313131;
+            }
+
+            .swiper-pagination-bullet-active {
+                color: #fff;
+                background-color: #f1f1f1;
+            }
+        </style>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
+
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <main>
+            <article></article>
+
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>
